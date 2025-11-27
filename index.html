@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dynamic Game Tier List</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <header>
@@ -13,58 +15,66 @@
     </header>
 
     <main id="tier-list-container">
-        
+
         <div class="tier-row" id="tier-1">
-            <h2 class="tier-label">1-Tier: Masterpiece</h2>
-            <div class="game-card" id="Expedition-33" onclick="openModal('Expedition-33')">
-                <img src="img/Expedition-33.jpg" alt="Clair Obscur: Expedition 33">
-                <p>Clair Obscur: Expedition 33</p>
+            <div class="tier-rank">
+                <h2 class="tier-label">1-Tier: Masterpiece</h2>
             </div>
-            
-            <div class="game-card" id="FinalFantasyXVI" onclick="openModal('FinalFantasyXVI')">
-                <img src="img/final-fantasy-xvi.jpg" alt="FinalFantasyXVI">
-                <p>Final Fantasy XVI</p>
-            </div>
+            <div class="tier-items">
+                <div class="game-card" id="Expedition-33" onclick="openModal('Expedition-33')">
+                    <img src="img/Expedition-33.jpg" alt="Clair Obscur: Expedition 33">
+                    <p>Clair Obscur: Expedition 33</p>
+                </div>
 
-                        <div class="game-card" id="Yakuza: Like a dragon" onclick="openModal('Yakuza: Like a dragon')">
-                <img src="img/Yakuza.jpg" alt="Yakuza: Like a dragon">
-                <p>Yakuza: Like a dragon</p>
-            </div>
-            
-                                    <div class="game-card" id="Elden Ring" onclick="openModal('Elden Ring')">
-                <img src="img/Elden-Ring.jpg" alt="Elden Ring">
-                <p>Elden Ring</p>
-            </div>
+                <div class="game-card" id="FinalFantasyXVI" onclick="openModal('FinalFantasyXVI')">
+                    <img src="img/final-fantasy-xvi.jpg" alt="FinalFantasyXVI">
+                    <p>Final Fantasy XVI</p>
+                </div>
+
+                <div class="game-card" id="Yakuza: Like a dragon" onclick="openModal('Yakuza: Like a dragon')">
+                    <img src="img/Yakuza.jpg" alt="Yakuza: Like a dragon">
+                    <p>Yakuza: Like a dragon</p>
+                </div>
+
+                <div class="game-card" id="Elden Ring" onclick="openModal('Elden Ring')">
+                    <img src="img/Elden-Ring.jpg" alt="Elden Ring">
+                    <p>Elden Ring</p>
+                </div>
 
 
-                                    <div class="game-card" id="Persona5Royal" onclick="openModal('Persona5Royal')">
-                <img src="img/persona-5-royal.jpg" alt="Persona5Royal">
+                <div class="game-card" id="Persona5Royal" onclick="openModal('Persona5Royal')">
+                    <img src="img/persona-5-royal.jpg" alt="Persona5Royal">
                     <p>Persona 5 Royal</p>
-            </div>
+                </div>
 
-
-            </div>
-            
-        
-        <div class="tier-row" id="tier-2">
-            <h2 class="tier-label">2-Tier: Outstanding</h2>
-            <div class="game-card" id="GodOfWar" onclick="openModal('GodOfWar')">
-                <img src="img/GodOfWar.jpg" alt="GodOfWar">
-                <p>God Of War</p>
             </div>
         </div>
 
-        </main>
+
+        <div class="tier-row" id="tier-2">
+            <div class="tier-rank">
+                <h2 class="tier-label">2-Tier: Outstanding</h2>
+            </div>
+            <div class="tier-items">
+                <div class="game-card" id="GodOfWar" onclick="openModal('GodOfWar')">
+                    <img src="img/GodOfWar.jpg" alt="GodOfWar">
+                    <p>God Of War</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <div id="game-modal" class="modal-hidden">
         <div class="modal-inner">
-             <button class="close-btn" onclick="closeModal()">Close (X)</button>
+            <button class="close-btn" onclick="closeModal()">Close (X)</button>
             <div id="modal-content">
-                </div>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
