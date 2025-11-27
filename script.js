@@ -42,9 +42,27 @@ const gamePresentations = {
         `
     },
 
+        'FinalFantasyXVI': {
+        title: '1-Tier: Final Fantasy XVI',
+        // Use HTML sections or divs to structure your slides/topics
+        slides: `
+            <section>
+                <h2>🎵 Music & Atmosphere</h2>
+                <p>Koji Kondo's score for the Water Temple is a masterclass in mood setting...</p>
+                <p>The iconic Ocarina melodies are intrinsically linked to game progression.</p>
+            </section>
+            <hr>
+            <section>
+                <h2>⚔️ Boss Fights: Phantom Ganon</h2>
+                <p>The spirit battle that requires timing, bouncing energy balls, and portal navigation is iconic.</p>
+                <p>This battle set the standard for Zelda's multi-stage dungeon bosses.</p>
+            </section>
+        `
+    },
+
     // Hades (The ID matches the HTML id="hades")
-    'hades': {
-        title: '2-Tier: Hades',
+    'GodOfWar': {
+        title: '2-Tier: GodOfWar',
         slides: `
             <section>
                 <h2>🎨 Art Direction & Voice Acting</h2>

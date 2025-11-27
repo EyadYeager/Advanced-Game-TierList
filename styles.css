@@ -17,6 +17,7 @@ h1 {
 .tier-row {
     display: flex;
     align-items: center;
+    flex-shrink: 4;
     min-height: 120px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -39,11 +40,12 @@ h1 {
 /* Add styles for #tier-3, #tier-4, etc., here */
 
 .game-card {
-    cursor: pointer; /* Changes mouse to a hand to indicate clicking */
-    width: 100px; /* Size of the game art */
+    cursor:pointer  ; /* Changes mouse to a hand to indicate clicking */
+    max-width: 200px; /* Size of the game art */
     text-align: center;
     margin: 10px;
     transition: transform 0.2s;
+
 }
 
 .game-card:hover {
@@ -52,8 +54,8 @@ h1 {
 
 .game-card img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: 100%;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
