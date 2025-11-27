@@ -2,7 +2,30 @@
 const gamePresentations = {
     // Clair Obscur: Expedition 33 (The ID matches the HTML id="Expedition-33")
     'Expedition-33': {
-        title: '1-Tier: The Legend of Zelda: Ocarina of Time',
+        title: '1-Tier: Clair Obscur: Expedition 33',
+        // Use HTML sections or divs to structure your slides/topics
+        slides: `
+            <section>
+                <h2>🎵 Music & Atmosphere</h2>
+                <p>The soundtrack of this game is probably the best in terms of a whole playlist. Both in terms of the music sounds and also poetically. The refrences and how much the music reflects the game in every way possible, especially the lyrics.</p>
+                <h3>Une vie à t'aimer </h3>
+                <p>This is probably my favourite song in the entire game, one of if not the best boss soundtrack that I can think of. It is an 11 minute of pure awe. It is used in the Renior boss fight in Stone Wave Cliffs. The lyrics are absolutely poetic, it is basically an argument between the male and the female singers whom are playing the chracters in the game Renior and Aline. The female singer is as amazing as always, but the surprise of an male singer was a shock and for him to be the one who also sang 'Bury the light' from DMC5, was amazing. As much as I love the Alice the female singer, I absolutely love how the Victor the male singer just sounds so raw and real. It feels like he is just screaming from the bottom of his heart. Absolute Masterpiece of a track </p>
+            </section>
+            <hr>
+            <section>
+                <h2>⚔️ Boss Fights</h2>
+                <h3>Simon </h3>
+                <h4>The Buildup </h4>
+                <p>Firstly before the fight even begins the drop to reach his arena is a very nice touch, really builds up the atmosphere. Then there is the arena, absolute darkness with only golden swords in the back with one guy sitting showing his back.</p>
+                <h4>The Fight </h4>
+                <h5>First Phase </h5>
+                <p>It intially starts with quite a simple yet cool boss fight where Simon has a few attacks all of which are quite nice and meaty when you are able to parry them. He doesn't have that much HP.</p>
+            </section>
+        `
+    },
+
+    'FinalFantasyXVI': {
+        title: '1-Tier: Final Fantasy XVI',
         // Use HTML sections or divs to structure your slides/topics
         slides: `
             <section>
@@ -48,7 +71,7 @@ const contentArea = document.getElementById('modal-content');
  */
 function openModal(gameID) {
     const data = gamePresentations[gameID];
-    
+
     // Check if the game data exists
     if (data) {
         // 1. Inject the title and presentation HTML content
@@ -72,7 +95,7 @@ function closeModal() {
 }
 
 // Optional: Allow closing the modal by pressing the ESC key
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeModal();
     }
