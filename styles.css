@@ -89,7 +89,7 @@ h1 {
     background: #282c34; /* Dark background for presentation content */
     padding: 30px;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 900px;
     max-height: 90vh; /* Limits height to screen size */
     overflow-y: auto; /* Allows scrolling if content is long */
     position: relative;
@@ -113,4 +113,16 @@ h1 {
 .tier-items{
     display: flex;
     flex-wrap: nowrap;
+}
+.modal-bigimg{
+    height: 630px;
+    width: 880px;
+
+}
+.modal-smallimg{
+    height: 240px;
+}
+.modal-collage{
+    display: flex;
+    flex-wrap: wrap;
 }
