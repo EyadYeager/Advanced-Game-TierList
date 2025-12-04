@@ -92,8 +92,11 @@ const gamePresentations = {
            
             `,
             `
-            <h2>🎭 Narrative & Character Depth</h2>
-            <p>Discuss Clive's journey, the political landscape of Valisthea, or the voice acting that impressed you most.</p>
+            <h2>🗺️ The wonderfull and rich world of Valisthea </h2>
+            <p> What I find exceptional in this game is the world. It feels very alive I love how there are things happening in the world whilst you are in a comlpetely different area of the continent and eventually it has a sever impact and outcome on the rest of the story and the world, so much so that almost every single npc has a line about the continent at that exact moment. It is such a rich world that was splendidly made and presented. </p>
+            <h2>🎙️ Voice Acting & Character Development </h2>
+            <p>The voice acting in Final Fantasy XVI is top-notch. It truly feels authentic with the voice actors and the different accents every character has and how their upbringing and their history is clearly presented with even the way they speak. It really adds so much more depth to the characters and the world they live in. I especially love Clive's voice actor, he truly brings out the character's personality and emotions perfectly. The character development throughout the game is also very well done, with each character having their own unique arc and growth throughout the story. It truly makes you care about the characters and their journey. Clive has such a great voice actor who truly brings out his emotions so perfectly, especially whenever he started griveving, it felt so real and authentic. I really felt him, even though I don't personally relate to him at all. It was simply that good and Torgal is best boy.</p> <img src="/img/TorgalCliveRosfieldGIF_2.gif" class="modal-smallimg" >
+
             </div>
             `
         ]
