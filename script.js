@@ -58,9 +58,9 @@ const gamePresentations = {
             <h2>🎵 Soundtrack & Musical Score</h2>
             <p>The soundtrack of Final Fantasy XVI is an absolute masterpiece that elevates the entire gaming experience. Composed by Masayoshi Soken, the music perfectly captures the epic scale and emotional depth of the game's narrative. From the haunting melodies during somber moments to the adrenaline-pumping tracks during intense battles, every piece of music feels meticulously crafted to enhance the atmosphere.</p>
             <h3>Battle Theme</h3>
-            <p>sdertfgyhuijokpl </p> 
+            <p>The battle theme(Sixteen bells) is a really great battle theme because while it is quite epic, weirdly enough it has a calm and quiet part while it feels weird it somehow fits. I am not really sure, but it I can say for sure that it perfectly feels like a battle theme because it is epic but it has this comfortable part because you listen to it so many times, without being boring.  </p> 
             <h3>Hub Theme "Hide, Hideaway"</h3>
-            <p>asdfghjkl;'</p>
+            <p>This is the first song that truly stuck in my mind, simply because it is feels reminiscing even though I had never heard of it before. I absolutely love the vibe of the song it truly feels like a piece from the middle ages very fitting of the theme and the place where it is played. Great piece.</p>
 
             <h2>⚔️ Eikon Battles</h2>
             <p>The scale and spectacle of the Eikon vs. Eikon fights are unmatched. I haven't had a game hit me with so many absolutely top tier boss fights in so many different variations all at the same time. (e.g., Titan or Bahamut).</p>
