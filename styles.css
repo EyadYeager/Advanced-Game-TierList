@@ -7,7 +7,6 @@ body {
     background-image: url('/img/background.jpg');
     background-size: cover;
     background-attachment: fixed;
-    
 }
 
 h1 {
@@ -21,21 +20,21 @@ h1 {
 .tier-row {
     display: flex;
     align-items: center;
-    flex-shrink: 4;
     min-height: 120px;
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden; /* Ensures game cards don't spill over */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* flex-shrink: 4; removed as it can cause issues */
 }
 
-.tier-label {
+.tier-rank {
     width: 200px; /* Fixed width for the label */
     padding: 15px;
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
-    flex-shrink: 0; 
+    flex-shrink: 0; /* CRUCIAL: Prevents the label from shrinking on small screens */
 }
 
 /* Specific colors for each tier ID */
@@ -46,13 +45,12 @@ h1 {
 .game-card {
     display: flex;
     cursor: pointer;
-    max-width: 200px;
+    max-width: 29vh; /* Using vh to match image size better */
     text-align: center;
     margin: 10px;
     transition: transform 0.2s;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
 
 .game-card:hover {
@@ -60,8 +58,7 @@ h1 {
 }
 
 .game-card img {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
     width: 29vh;
     height: 17vh;
     margin: 5px;
@@ -69,6 +66,16 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.tier-items{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1; /* Allows the items container to fill available space */
+    min-width: 0; /* Prevents overflow issues */
+}
+
+.tier-rank{
+    font-family:monospace;
+}
 
 /* ======== MODAL STYLING (The Presentation Pop-up) ======== */
 
@@ -104,33 +111,60 @@ h1 {
 }
 
 .close-btn {
-    position: sticky;
-    top: 5px;
-    left: 2000px;
+    position: absolute; /* FIXED: Use absolute to place it relative to the modal */
+    top: 10px;
+    right: 10px; /* FIXED: Use right instead of a huge fixed pixel value */
     font-size: 1.5em;
     background: rgb(29, 30, 53);
     border-radius: 25px;
     border: none;
     color: white;
     cursor: pointer;
-}
-.tier-rank{
-   font-family:monospace;
+    z-index: 1001; /* Ensure it's clickable above content */
 }
 
-.tier-items{
-    display: flex;
-    flex-wrap: nowrap;
+/* --- MODAL CONTENT SPACING (NEW: Separates content blocks) --- */
+
+/* Add space below all headings and paragraphs inside the modal content area */
+#modal-content h2,
+#modal-content h3,
+#modal-content h4,
+#modal-content h5,
+#modal-content p {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    line-height: 1.5; /* Improves readability */
 }
+
+/* Ensure images have vertical margin */
+#modal-content img {
+    margin: 15px 0; 
+    display: block; 
+}
+
+
 .modal-bigimg{
-    height: 630px;
-    width: 880px;
+    /* Use max-width to make sure large images fit inside the modal on smaller screens */
+    max-width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+}
 
-}
 .modal-smallimg{
-    height: 240px;
+    /* Use max-width for smaller images */
+    max-width: 100%;
+    height: auto; 
 }
+
 .modal-collage{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around; /* Distributes images evenly */
+    margin-top: 15px;
+}
+
+.modal-collage img {
+    height: 240px;
+    width: auto;
+    max-width: 48%; /* Allows two images side-by-side on a wide screen */
+    margin: 5px; /* Small margin around each collage image */
 }
