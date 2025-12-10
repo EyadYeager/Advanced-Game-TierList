@@ -58,8 +58,8 @@ const gamePresentations = {
             `
             <h2>🎵 Soundtrack & Musical Score</h2>
             <p>The soundtrack of Final Fantasy XVI is an absolute masterpiece that elevates the entire gaming experience. Composed by Masayoshi Soken, the music perfectly captures the epic scale and emotional depth of the game's narrative. From the haunting melodies during somber moments to the adrenaline-pumping tracks during intense battles, every piece of music feels meticulously crafted to enhance the atmosphere.</p>
-            <h3>Battle Theme</h3>
-            <p>The battle theme(Sixteen bells) is a really great battle theme because while it is quite epic, weirdly enough it has a calm and quiet part while it feels weird it somehow fits. I am not really sure, but it I can say for sure that it perfectly feels like a battle theme because it is epic but it has this comfortable part because you listen to it so many times, without being boring.  </p> 
+            <h3>Battle Theme "Sixteen bells"</h3>
+            <p>The battle theme is a really great battle theme because while it is quite epic, weirdly enough it has a calm and quiet part while it feels weird it somehow fits. I am not really sure, but it I can say for sure that it perfectly feels like a battle theme because it is epic but it has this comfortable part because you listen to it so many times, without being boring.  </p> 
             <h3>Hub Theme "Hide, Hideaway"</h3>
             <p>This is the first song that truly stuck in my mind, simply because it is feels reminiscing even though I had never heard of it before. I absolutely love the vibe of the song it truly feels like a piece from the middle ages very fitting of the theme and the place where it is played. Great piece.</p>
             `,
@@ -103,7 +103,7 @@ const gamePresentations = {
             `,
             // Section 7: World and Voice Acting
             `
-            <h2>🗺️ The wonderfull and rich world of Valisthea </h2>
+            <h2>🗺️ The wonderful and rich world of Valisthea </h2>
             <p> What I find exceptional in this game is the world. It feels very alive I love how there are things happening in the world whilst you are in a completely different area of the continent and eventually it has a sever impact and outcome on the rest of the story and the world, so much so that almost every single npc has a line about the continent at that exact moment. It is such a rich world that was splendidly made and presented. </p>
             <h2>🎙️ Voice Acting & Character Development </h2>
             <p>The voice acting in Final Fantasy XVI is top-notch. It truly feels authentic with the voice actors and the different accents every character has and how their upbringing and their history is clearly presented with even the way they speak. It really adds so much more depth to the characters and the world they live in. I especially love Clive's voice actor, he truly brings out the character's personality and emotions perfectly. The character development throughout the game is also very well done, with each character having their own unique arc and growth throughout the story. It truly makes you care about the characters and their journey. Clive has such a great voice actor who truly brings out his emotions so perfectly, especially whenever he started griveving, it felt so real and authentic. I really felt him, even though I don't personally relate to him at all. It was simply that good and Torgal is best boy.</p> <img src="/img/TorgalCliveRosfieldGIF_2.gif" class="modal-smallimg" >
@@ -111,9 +111,31 @@ const gamePresentations = {
         ]
     },
 
+    // Yakuza: Like a Dragon
+    'Yakuza: Like a dragon': {
+        title: '1-Tier: Yakuza: Like a Dragon',
+        sections: [
+            // Section 1: Combat (Placeholder content)
+            `
+            <h2>Combat System</h2>
+            <p>I love the old combat beat-em up style in the older Yakuza games, so when I saw that this game had a turn-based system, I was skeptical at first. However, the turn-based combat in this game is really fun with lots of variety and it is quite engaging. I really like the job system. It gives a lot of variety with the freedom to also give any character whichever role you want to.</p>
+            `,
+            // Section 2: Story and Characters (Placeholder content)
+            `
+            <h2>Story and Characters</h2>
+            <p>This game's story is as extremely complex as it is amazing. The plot twists and the secrets were super exciting and unexpected. I genuinly didn't expect to almost shed a tear at the ending. It was amazingly shot and voice acted. I really enjoyed the twists that came with Ichiban's backstory and how he changes throughout the game, same with the young master</p>
+            `,
+            // Section 3: Side Quests and Mini-Games (Placeholder content)
+            `
+            <h2>Side Quests and Mini-Games</h2>
+            <p>As always the amount of side quests here are abundant. Many already known ones but also many many new ones. There is the Go-kart, the RAM sleeping minigame and I also really enjoyed the drinking minigame to learn more about the characters. It is a really nice way of learning about the backstories of your party members.</p>
+            `
+        ]
+    },
+
     // God Of War
-    'GodOfWar': {
-        title: '2-Tier: GodOfWar',
+    'God of War': {
+        title: '2-Tier: God Of War',
         sections: [
             // Section 1: Combat (Removed <div class="modal">)
             `

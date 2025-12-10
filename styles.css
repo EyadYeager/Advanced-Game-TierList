@@ -4,11 +4,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
-<<<<<<< HEAD
-    background-image: url('img/background.jpg'); /* <-- The Fixed Path! */
-=======
     background-image: url('img/background.jpg');
->>>>>>> 77a14b3c99ab5accf6662cb02d9456036420a57e
     background-size: cover;
     background-attachment: fixed;
 }
@@ -155,7 +151,7 @@ h1 {
 
 .modal-smallimg{
     /* Use max-width for smaller images */
-    max-width: 100%;
+    max-width: 50%;
     height: auto; 
 }
 
