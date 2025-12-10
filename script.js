@@ -19,7 +19,7 @@ const gamePresentations = {
             `
             <h2>⚔️ Boss Fights</h2>
             <h3>Simon </h3>
-            <img src="/img/Simon.jpg" class="modal-smallimg">
+            <img src="img/Simon.jpg" class="modal-smallimg">
             <h4>The Buildup </h4>
             <p>Firstly before the fight even begins the drop to reach his arena is a very nice touch, really builds up the atmosphere. Then there is the arena, absolute darkness with only golden swords in the back with one guy sitting showing his back.</p>
             <h4>The Fight </h4>
@@ -36,9 +36,9 @@ const gamePresentations = {
             <h2>✨ Visual Style & World</h2>
             <div class="modal-collage">
             <p>This absolute style and art of this game's world is breathtaking, capturing the essence of exploration and adventuring through something truly new and unfamiliar. Everything looks like it was taken from a painting (Literally).</p>
-            <img src="/img/Expedition-area1.jpg" class="modal-smallimg"><img src="/img/Expedition-area3.jpg" class="modal-smallimg">
-            <img src="/img/Expedition-area2.jpg" class="modal-smallimg"><img src="/img/Expedition-area4.jpg" class="modal-smallimg">
-            <img src="/img/Expedition-area5.jpg" class="modal-smallimg"><img src="/img/Expedition-area6.jpg" class="modal-smallimg">
+            <img src="img/Expedition-area1.jpg" class="modal-smallimg"><img src="img/Expedition-area3.jpg" class="modal-smallimg">
+            <img src="img/Expedition-area2.jpg" class="modal-smallimg"><img src="img/Expedition-area4.jpg" class="modal-smallimg">
+            <img src="img/Expedition-area5.jpg" class="modal-smallimg"><img src="img/Expedition-area6.jpg" class="modal-smallimg">
             </div>
             `
         ]
@@ -52,7 +52,7 @@ const gamePresentations = {
             `
             <h2>🗡️ Combat System & Gameplay</h2>
             <p>Final Fantasy XVI introduces a dynamic new combat system, very DMC-like and I really like it. It feels very smooth and the feeling of the hits are also pretty good. What I especially love the most are the Eikonic Abilites. There are so many of them and I wasn't expecting to get abilites from every single Eikon. I thought some will be missed, but as a reoccuring theme in this game for me it happily proved me wrong. The way you get the abilites are also so satisfying because you usually get them after a really long and hard-fought battle with a usually super cool boss fight. It felt really authentic how you got the abilites, it felt like the story was made first and then the game was thought about right after so from a gameplay standpoint getting the Odin abilites may have been weirdly late into the game but from the story perspective it felt perfectly correct and that is a reoccuring happenstance in this game and to me it really sells this game's story and world even more this way. That doesn't mean the gameplay isn't great, no the gameplay is super fun with the differnt Eikonic abilites you have and I love how you can mix match different ones. It just adds so much more to the gameplay loop and potential for differnt playstyles. I especially love the Ramuh and Shiva's abilites most then Bahamut, Titan and Odin, The other ones are nice but compared to the ones I have mentioned they seem quite simple, but definitly still fun.  </p>
-            <img src="/img/ffxvi-eikonwheel.jpg" class="modal-smallimg" >
+            <img src="img/ffxvi-eikonwheel.jpg" class="modal-smallimg" >
             `,
             // Section 2: Soundtrack & Musical Score
             `
@@ -106,7 +106,8 @@ const gamePresentations = {
             <h2>🗺️ The wonderful and rich world of Valisthea </h2>
             <p> What I find exceptional in this game is the world. It feels very alive I love how there are things happening in the world whilst you are in a completely different area of the continent and eventually it has a sever impact and outcome on the rest of the story and the world, so much so that almost every single npc has a line about the continent at that exact moment. It is such a rich world that was splendidly made and presented. </p>
             <h2>🎙️ Voice Acting & Character Development </h2>
-            <p>The voice acting in Final Fantasy XVI is top-notch. It truly feels authentic with the voice actors and the different accents every character has and how their upbringing and their history is clearly presented with even the way they speak. It really adds so much more depth to the characters and the world they live in. I especially love Clive's voice actor, he truly brings out the character's personality and emotions perfectly. The character development throughout the game is also very well done, with each character having their own unique arc and growth throughout the story. It truly makes you care about the characters and their journey. Clive has such a great voice actor who truly brings out his emotions so perfectly, especially whenever he started griveving, it felt so real and authentic. I really felt him, even though I don't personally relate to him at all. It was simply that good and Torgal is best boy.</p> <img src="/img/TorgalCliveRosfieldGIF_2.gif" class="modal-smallimg" >
+            <p>The voice acting in Final Fantasy XVI is top-notch. It truly feels authentic with the voice actors and the different accents every character has and how their upbringing and their history is clearly presented with even the way they speak. It really adds so much more depth to the characters and the world they live in. I especially love Clive's voice actor, he truly brings out the character's personality and emotions perfectly. The character development throughout the game is also very well done, with each character having their own unique arc and growth throughout the story. It truly makes you care about the characters and their journey. Clive has such a great voice actor who truly brings out his emotions so perfectly, especially whenever he started griveving, it felt so real and authentic. I really felt him, even though I don't personally relate to him at all. It was simply that good and Torgal is best boy.</p> 
+            <img src="img/TorgalCliveRosfieldGIF_2.gif" class="modal-smallimg" >
             `
         ]
     },
@@ -118,7 +119,7 @@ const gamePresentations = {
             // Section 1: Combat (Placeholder content)
             `
             <h2>Combat System</h2>
-            <p>I love the old combat beat-em up style in the older Yakuza games, so when I saw that this game had a turn-based system, I was skeptical at first. However, the turn-based combat in this game is really fun with lots of variety and it is quite engaging. I really like the job system. It gives a lot of variety with the freedom to also give any character whichever role you want to.</p>
+            <p>I love the old combat beat-em up style in the older Yakuza games, so when I saw that this game had a turn-based system, I was skeptical at first. However, the turn-based combat in this game is really fun with lots of variety and it is quite engaging. I really like the job system. It gives a lot of variety with the freedom to also give any character whichever role you want to. This type of turn-based combat is quite unique where the location of your and other characters matter a   </p>
             `,
             // Section 2: Story and Characters (Placeholder content)
             `
@@ -129,6 +130,24 @@ const gamePresentations = {
             `
             <h2>Side Quests and Mini-Games</h2>
             <p>As always the amount of side quests here are abundant. Many already known ones but also many many new ones. There is the Go-kart, the RAM sleeping minigame and I also really enjoyed the drinking minigame to learn more about the characters. It is a really nice way of learning about the backstories of your party members.</p>
+            `
+        ]
+    },
+    
+    // Persona 5 Royal
+    'Persona5Royal': {
+        title: '1-Tier: Persona5Royal',
+        sections: [
+            // Section 1: Combat (Removed <div class="modal">)
+            `
+            <img src="img/p5-logo.jpg" class="modal-bigimg">
+            <h2>🪓 Combat System & Leviathan Axe</h2>
+            <p>Detail what you love about the combat feel, the weight of the Leviathan Axe, and the rune abilities.</p>
+            `,
+            // Section 2: Relationship (Removed </div>)
+            `
+            <h2>👨‍👦 Relationship & Worldbuilding</h2>
+            <p>Focus on the relationship between Kratos and Atreus, or the stunning visual design of the Norse realms (Midgard, Alfheim, etc.).</p>
             `
         ]
     },
@@ -150,23 +169,6 @@ const gamePresentations = {
         ]
     },
 
-    // Persona 5 Royal
-    'Persona5Royal': {
-        title: '1-Tier: Persona5Royal',
-        sections: [
-            // Section 1: Combat (Removed <div class="modal">)
-            `
-            <img src="img/p5-logo.jpg" class="modal-bigimg">
-            <h2>🪓 Combat System & Leviathan Axe</h2>
-            <p>Detail what you love about the combat feel, the weight of the Leviathan Axe, and the rune abilities.</p>
-            `,
-            // Section 2: Relationship (Removed </div>)
-            `
-            <h2>👨‍👦 Relationship & Worldbuilding</h2>
-            <p>Focus on the relationship between Kratos and Atreus, or the stunning visual design of the Norse realms (Midgard, Alfheim, etc.).</p>
-            `
-        ]
-    }
     // Note: You need to add entries for 'Yakuza: Like a dragon' and 'Elden Ring'
 };
 
