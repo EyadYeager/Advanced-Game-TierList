@@ -118,6 +118,7 @@ const gamePresentations = {
         sections: [
             // Section 1: Combat (Placeholder content)
             `
+            <p> This game is just purely fun there isn't much for me to say besides that it is a pure fun time, whilst having some equally extremely deep emotional as goofy stupid hilarious moments in the best ways possible. </p>
             <h2>Combat System</h2>
             <p>I love the old combat beat-em up style in the older Yakuza games, so when I saw that this game had a turn-based system, I was skeptical at first. However, the turn-based combat in this game is really fun with lots of variety and it is quite engaging. I really like the job system. It gives a lot of variety with the freedom to also give any character whichever role you want to. This type of turn-based combat is quite unique where the location of your and other characters matter a   </p>
             `,
@@ -129,8 +130,16 @@ const gamePresentations = {
             // Section 3: Side Quests and Mini-Games (Placeholder content)
             `
             <h2>Side Quests and Mini-Games</h2>
-            <p>As always the amount of side quests here are abundant. Many already known ones but also many many new ones. There is the Go-kart, the RAM sleeping minigame and I also really enjoyed the drinking minigame to learn more about the characters. It is a really nice way of learning about the backstories of your party members.</p>
+            <p>As always with Yakuza games the amount of side quests here are abundant. Many already known ones but also many many new ones. There is the Go-kart, the RAM sleeping minigame and I also really enjoyed the drinking minigame to learn more about the characters. It is a really nice way of learning about the backstories of your party members.</p>
+            `,
+            // Section 4: Highlights (Placeholder content
             `
+            <h2>Highlights</h2>
+            <p>There are so many memorable moments in this game, from the hilarious side quests to the emotional story beats. One of my favorite moments is when Ichiban and his party fight Kiryu. Something I never expected to ever happen. This after fighting Majima and Saejima made me feel so giddy and I am glad that they were super difficult fights. It made it feel a lot more realistic for the characters. Definitely a highlight for me</p>
+            <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg">
+            <img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
+            `
+
         ]
     },
     
