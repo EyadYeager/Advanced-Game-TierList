@@ -132,12 +132,22 @@ const gamePresentations = {
             <h2>Side Quests and Mini-Games</h2>
             <p>As always with Yakuza games the amount of side quests here are abundant. Many already known ones but also many many new ones. There is the Go-kart, the RAM sleeping minigame and I also really enjoyed the drinking minigame to learn more about the characters. It is a really nice way of learning about the backstories of your party members.</p>
             `,
-            // Section 4: Highlights (Placeholder content
+            // Section 4: Characters(Placeholder content)
+            `
+            <h2>Characters</h2>
+            <h3>Ichiban Kasuga</h3>
+            <img src="img/Y7Ichiban.jpg" alt="Ichiban Kasuga" class="modal-smallimg">
+            <p>Ichiban is such a lovable character, he is so pure and kind-hearted it is impossible not to like him. He is super down-to-earth yet dumb it it makes him all the better. He doesn't replace Kiryu, however he fils a different role as a main character and I am all for it.</p>
+            <h3>Zhao</h3>
+            <img src="img/Y7Zhao.jpg" alt="Zhao" class="modal-smallimg">
+            <p> Half of the party I really like, espcially Zhao. He is one of my most favourite characters in the entire franchise so far. He is just so cool whilst still being cocky and having a sense of humour all at the same time. He is just such a great character. I wasn't happier than when I realised that he can join the party. I never got him out of my main party ever. He also just has my favourite unique job "Gangster". He also just has the absolute best outfit in the entire game. </p>
+            <img src="img/Y7Party.jpg" alt="Yakuza 7 Party" class="modal-smallimg">
+            `,
+            // Section 5: Highlights (Placeholder content)
             `
             <h2>Highlights</h2>
             <p>There are so many memorable moments in this game, from the hilarious side quests to the emotional story beats. One of my favorite moments is when Ichiban and his party fight Kiryu. Something I never expected to ever happen. This after fighting Majima and Saejima made me feel so giddy and I am glad that they were super difficult fights. It made it feel a lot more realistic for the characters. Definitely a highlight for me</p>
-            <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg">
-            <img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
+            <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg"> <img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
             `
 
         ]
