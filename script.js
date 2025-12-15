@@ -141,13 +141,20 @@ const gamePresentations = {
             <h3>Zhao</h3>
             <img src="img/Y7Zhao.jpg" alt="Zhao" class="modal-smallimg">
             <p> Half of the party I really like, espcially Zhao. He is one of my most favourite characters in the entire franchise so far. He is just so cool whilst still being cocky and having a sense of humour all at the same time. He is just such a great character. I wasn't happier than when I realised that he can join the party. I never got him out of my main party ever. He also just has my favourite unique job "Gangster". He also just has the absolute best outfit in the entire game. </p>
-            <img src="img/Y7Party.jpg" alt="Yakuza 7 Party" class="modal-smallimg">
+            <h3>Joon-Gi Han</h3>
+            <img src="img/Y7JoonGi.jpg" alt="Joon-Gi Han" class="modal-smallimg">
+            <p> I think if Zhao if didn't exist then Joon-Gi would have been my favourite character. He is such a great character with a really interesting backstory with an interesting perspective on certain things. He was such a surprise, especially because of his looks and how he has the same name and looks as the anatgonist in Yakuza 6. So I was equally as surprised to see him alive as I was when he joined the party, just like Zhao. </p>
+            <h3>Saeko Mukoda</h3>
+            <img src="img/Y7Saeko.jpg" alt="Saeko Mukoda" class="modal-smallimg">
+            <p>With Saeko I wasn't sure at first, since I feel it is hard to write a female character that I personally really like. However, Saeko really grew on me throughout the game and by the end I really liked her. I really like her dynamic with Ichiban it is really nice to see. </p>
+            <h3>Other Party Members</h3>
+            <p> The rest of the gang are cool. I didn't have any negative remarks on them. I was simply not as interested in</p>
             `,
             // Section 5: Highlights (Placeholder content)
             `
             <h2>Highlights</h2>
             <p>There are so many memorable moments in this game, from the hilarious side quests to the emotional story beats. One of my favorite moments is when Ichiban and his party fight Kiryu. Something I never expected to ever happen. This after fighting Majima and Saejima made me feel so giddy and I am glad that they were super difficult fights. It made it feel a lot more realistic for the characters. Definitely a highlight for me</p>
-            <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg"> <img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
+            <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg"><img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
             `
 
         ]
@@ -186,9 +193,21 @@ const gamePresentations = {
             <p>Focus on the relationship between Kratos and Atreus, or the stunning visual design of the Norse realms (Midgard, Alfheim, etc.).</p>
             `
         ]
-    },
 
-    // Note: You need to add entries for 'Yakuza: Like a dragon' and 'Elden Ring'
+    },
+    //Like a dragon: The man who erased his name
+    'LAD Gaiden': {
+        title: '2-Tier: Like a dragon Gaiden: The Man Who Erased His Name',    
+        sections: [
+            // Section 1: Story & Characters (Removed <div class="modal">)
+            `
+            <h2>📖 Story & Characters</h2>
+            <p>.</p>
+            `,
+            // Section 2: Gameplay Mechanics (Removed </div>)
+
+        ]
+    },
 };
 
 // --- 2. MODAL FUNCTIONS (Updated to build HTML from the 'sections' array) ---
