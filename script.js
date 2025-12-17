@@ -8,6 +8,26 @@ const gamePresentations = {
     'Expedition-33': {
         title: '1-Tier: Clair Obscur: Expedition 33',
         sections: [
+            // Section 0: Acts
+            `
+            <h2> Acts of Clair Obscur: Expedition 33</h2>
+
+            <img src="img/Expedition-Prologue.jpg" class="modal-smallimg">
+            <p>The prologue of game sets a great tone for the rest of the game, I imagine a lot of people cried at the ending of the prologue, but unfortunately I didn't since I figured out what was going to happen. However, it was still a very emotional scene and I really liked how it was presented. The music played a very large role in which I noticed and it will be a theme that appears throughtout the game. </p>
+            <img src="img/Expedition-Act1.jpg" class="modal-smallimg">
+            <p> Looking back through Act 1 this act was the one with the most exploration and worldbuilding but it also had the most amount of light and comedic moments, especially because of the Gestrals. This act still had a lot of dark and emotoinally heavy moments. I think this came from the fact that Gustave was the main character here. At the beginning of the act he was very stressed and would only be thinking abuot Maelle and how to save her. So as soon as he found her the tone of the game lightened up a lot more. That is when I started to absolutely love Gustave and he started to show his funny and brotherly side. </p>\
+            <p> The ending of this act was something I never ever expected. It never crossed my mind that Gustave would die at all. This really took me by surprise. I didn't cry yet everytime I thought about it I felt sad, especially because to me I didn't care about Maelle and Sciel at all. I liked Lune but I aboslutely loved Gustave, so I was extremely sad after I realised that he was fully gone, but I was even more infurated when then they replaced him with Verso a ghetto Gustave. </p>
+            <img src="img/Expedition-Act2.jpg" class="modal-smallimg">
+            <p> Act 2 was quite intense, especially with the death of a party member. The mood of the entire team was super tense. It doesn't help with such a suspicious looking guy appearing and sort of taking over the role of Gustave.</p>
+            <p> I super enjoyed the combat here not only because of the new characters they are both quite unique and I enjoyed them a lot. It also added the Gradient counter and attacks which have incredibly satisfying sound effects behind 👍<p>
+            <p> Old Lumiére was a really cool area. The mysteries kept on piling up and the end of the area with the cutscene of th manor right before the boss fight also added more to the mystery. This is also when I first heard a small part of "Une vie à t'aimer" which I instantly loved.  The boss fight was really good, he was quite threatening espceially since he can gommage my party.</p>
+            <p> Then comes two Axons and one of if not my favourite area in the game "Sirene, She who plays with Wonder" . Firstly the area is gorgeous, The music is beautiful and a little touch I absoltuly love is how the vocals are made so that it sounds like the axon is the one singing it and whenever you turn the camera the vocals switch places in the headphones. Simply amazing. The boss fight itself is also really cool, I really like when she summons her minions you get a short pov shot of them flying down to you. Simple but nice.</p>
+            <img src="img/Expedition-Sirene.jpg" class="modal-smallimg">
+            <p> As for the other axon Visage I did find it neat that you can weaken him by destroying his masks. However, I didn't really have much to say about it, except for the fact that it is supposed to represent Verso "He who guards truth with lies" which is a perfect representation of him. Although I really liked the cutscene of the mask keeper first appearing really cool entrance.  </p>
+            <img src="img/Expedition-Visage.jpg" class="modal-smallimg">
+            <img src="img/Expedition-Act3.jpg" class="modal-smallimg">
+
+            `,
             // Section 1: Music & Atmosphere (Removed <div class="modal">)
             `
             <h2>🎵 Music & Atmosphere</h2>
@@ -25,7 +45,7 @@ const gamePresentations = {
             <h4>The Fight </h4>
             <h5>First Phase </h5>
             <p>It initially starts with quite a simple yet cool boss fight where Simon has a few attacks all of which are quite nice and meaty when you are able to parry them. He doesn't have that much HP.</p>
-            <h5>Phase Transition  </h5>
+            <h5 >Phase Transition </h5>
             <p>The cutscene into the second phase was very dark souls-like, I especially liked how Clea was the "maiden" who encouraged him into continuing fighting, then his hair turning white was a really cool scene.  
             <h5>Second Phase </h5>
             <p> This part gets crazy with 2 new attacks that are difficult and every single attack from the first phase is double the amount of hits now which throws you super off guard, especially when you have to switch between the first and the second phases. 
@@ -148,18 +168,18 @@ const gamePresentations = {
             <img src="img/Y7Saeko.jpg" alt="Saeko Mukoda" class="modal-smallimg">
             <p>With Saeko I wasn't sure at first, since I feel it is hard to write a female character that I personally really like. However, Saeko really grew on me throughout the game and by the end I really liked her. I really like her dynamic with Ichiban it is really nice to see. </p>
             <h3>Other Party Members</h3>
-            <p> The rest of the gang are cool. I didn't have any negative remarks on them. I was simply not as interested in</p>
+            <p> The rest of the gang are cool. I didn't have any negative remarks on them. I was simply not as interested in them as the ones I have mentioned above.</p>
             `,
             // Section 5: Highlights (Placeholder content)
             `
             <h2>Highlights</h2>
-            <p>There are so many memorable moments in this game, from the hilarious side quests to the emotional story beats. One of my favorite moments is when Ichiban and his party fight Kiryu. Something I never expected to ever happen. This after fighting Majima and Saejima made me feel so giddy and I am glad that they were super difficult fights. It made it feel a lot more realistic for the characters. Definitely a highlight for me</p>
+            <p>There are so many memorable moments in this game, from the hilarious side quests to the emotional story beats. One of my favorite moments is when Ichiban and his party fight Kiryu. Something I never expected to ever happen. This after fighting Majima and Saejima made me feel so giddy and I am glad that they were super difficult fights. It made it feel a lot more realistic for the characters. Definitely a highlight for me.</p>
             <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg"><img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
             `
 
         ]
     },
-    
+
     // Persona 5 Royal
     'Persona5Royal': {
         title: '1-Tier: Persona5Royal',
@@ -197,7 +217,7 @@ const gamePresentations = {
     },
     //Like a dragon: The man who erased his name
     'LAD Gaiden': {
-        title: '2-Tier: Like a dragon Gaiden: The Man Who Erased His Name',    
+        title: '2-Tier: Like a dragon Gaiden: The Man Who Erased His Name',
         sections: [
             // Section 1: Story & Characters (Removed <div class="modal">)
             `
