@@ -270,7 +270,7 @@ document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeModal();
     }
-    
+
 
 })
 // Close modal when clicking on the dark background overlay
@@ -307,7 +307,7 @@ backToTopBtn.addEventListener('click', () => {
 function closeModal() {
     modal.classList.remove('modal-visible');
     modal.classList.add('modal-hidden');
-    
+
     // Reset the scroll position to the top for the next time it opens
     modalInner.scrollTop = 0;
     backToTopBtn.classList.replace('top-btn-visible', 'top-btn-hidden');
