@@ -40,6 +40,7 @@ h1 {
 /* Specific colors for each tier ID */
 #tier-1 { background-color: #ffda79; opacity: 0.87; } /* Light Gold */
 #tier-2 { background-color: #e0e0e0; opacity: 0.87; } /* Light Silver */
+#tier-3 { background-color: #cd7f32; opacity: 0.87; } /* Light Bronze */
 /* Add styles for #tier-3, #tier-4, etc., here */
 
 .game-card {

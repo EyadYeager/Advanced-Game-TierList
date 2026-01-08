@@ -182,8 +182,30 @@ const gamePresentations = {
             <h2>Highlights</h2>
             <p>There are so many memorable moments in this game, from the hilarious side quests to the emotional story beats. One of my favorite moments is when Ichiban and his party fight Kiryu. Something I never expected to ever happen. This after fighting Majima and Saejima made me feel so giddy and I am glad that they were super difficult fights. It made it feel a lot more realistic for the characters. Definitely a highlight for me.</p>
             <img src="img/Y7IchibanVsKiryu.jpg" alt="Ichiban vs Kiryu" class="modal-smallimg"><img src="img/Y7IchibanVsMajima.jpg" alt="Ichiban vs Majima" class="modal-smallimg">
+            <p> One true highlight for me was one of the last cutscenes where Ichiban is crying and begging the Young Master to just stop. It really hit me, the voice actor the facial animation and the music all came just perfectly together to the point where I shed a tear. It was a beautifully done scene and also a tragic end. </p>
+            <img src="img/Y7IchibanCrying.jpg" alt="Ichiban Crying" class="modal-smallimg">
             `
 
+        ]
+    },
+
+    //Elden Ring
+    'Elden Ring': {
+        title: '1-Tier: Elden Ring',
+        sections: [
+            // Section 1: Open World Design
+            `
+            <h2>🌍 Open World Design</h2>
+            <p>This games map is larger than I had ever expected, but at the same time looking back at it, it feels like it isn't that large at the same time. It is large yet comprehendible </p>
+            <img src="img/EldenRingMap.jpg" class="modal-smallimg">
+            <p> There are so many areas with hidden secrets and places to explore, it truly feels like a miracle happened for such a game to be possibly made. The amount of detail and secrets that they have implemented in this game is beyond anything I have ever seen before. </p>
+
+            `,
+            // Section 2: Combat Mechanics
+            `
+            <h2>⚔️ Combat Mechanics</h2>
+            <p>The combat system in Elden Ring is both challenging and rewarding. The variety of weapons, spells, and abilities allows for diverse playstyles, while the strategic depth keeps players engaged in every encounter.</p>
+            `,
         ]
     },
 
@@ -230,6 +252,44 @@ const gamePresentations = {
             `
             <h2>📖 Story & Characters</h2>
             <p>.</p>
+            `,
+            `
+
+            `
+            // Section 2: Gameplay Mechanics (Removed </div>)
+
+        ]
+    },
+    //Like a dragon: Ishin
+    'Ishin': {
+        title: '2-Tier: Like a dragon Ishin',
+        sections: [
+            // Section 1: Story & Characters (Removed <div class="modal">)
+            `
+            <h2>Chapter 1</h2>
+            <p>The beginning of this game wasn't super interesting, quite a slow start but the final cutscene of the first chapter really left a strong impression on me. The oath that was made then set the tone for the rest of the game. </p>
+            <img src="img/IshinChapter1.jpg" class="modal-smallimg">
+            `,
+
+            `
+            <h2>Chapter 9</h2>
+            <p> 9th chapter was great all around for the banter with Ryuji and Akiyama. It was a great mix of a serious and dark start of the chapter which turned into a more lighthearted of a bunch of guys from completely opposite sides coming together to simply have fun. It tells a great story of forgetting, forgiving and moving on from the past.</p> 
+            <img src="img/IshinChapter9.jpg" class="modal-smallimg">
+            `,
+            `
+            <h2>Pre-Final battle Cutscene</h2>
+            <p>Final fight cutscene into the fight was a very interesting cutscene with the whole people having the same name and that one of them only one of them Will change history and that there could have been too people with the same name, changing history in different ways.Side note the mid fight cutscenes were very cool and and the concept of the enemy , having the same fighting style as me was another layer of meaning to the whole two ryomas thing.</p>
+            <h2>Final Cutscene</h2>
+            <p>The final cutscene has one of the most epic monologue and home/countr,y and an amazing end line from the man himself, Kuroda. What a great way to end the game by both addressing people who do end up changing the county over the history and in a way breaking the 4th wall by talking indirectly to the player, amazing.</p>
+            <img src="img/IshinFinal.jpg" class="modal-smallimg">
+            `,
+            `
+            <div class="modal-collage">
+            <img src="img/Ishin (1).jpg" class="modal-smallimg"><img src="img/Ishin (2).jpg" class="modal-smallimg">
+            <img src="img/Ishin (3).jpg" class="modal-smallimg"><img src="img/Ishin (4).jpg" class="modal-smallimg">
+            </div
+
+
             `,
             // Section 2: Gameplay Mechanics (Removed </div>)
 
