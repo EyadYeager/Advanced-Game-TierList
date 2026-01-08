@@ -25,7 +25,14 @@ const gamePresentations = {
             <img src="img/Expedition-Sirene.jpg" class="modal-smallimg">
             <p> As for the other axon Visage I did find it neat that you can weaken him by destroying his masks. However, I didn't really have much to say about it, except for the fact that it is supposed to represent Verso "He who guards truth with lies" which is a perfect representation of him. Although I really liked the cutscene of the mask keeper first appearing really cool entrance.  </p>
             <img src="img/Expedition-Visage.jpg" class="modal-smallimg">
+            <p> Finally the monolith, I wasn't expecting to reach it yet since I thought there would be another act and I expected this to happen at the third act. I really like the music and the atomsphere as soon as you enter the monolith area with the giant figure of the paintress just sitting there. Inside of the monolith are a bunch of cool designs where they are redisgns of previous areas, I really enjoyed it. I did feel that the it was very long getting to the top of the monolith just a little. 
+            <p> The Renoir fight here was absolutely amazing, one of my favourite boss fights in the entire game. Une vie à t'aimer is the boss fight theme here and it is absolutely stunning. Even just the cutscene leading up to the boss fight is probably one of my favourites. His second phase with a lion appearing out of nowhere is just soo cool. He is truly just Hoarah loux.
+            <img src="img/Expedition-Renoir.jpg" class="modal-smallimg"> 
+            <p> Finally the paintress fight was pretty good, not much to say except for the second phase where she brings the giant figure in the second fight and she starts to throw some absurd attacks. The only other thing I remember is right after you beat her she starts to heal your party, which I did kind of hit me deep. The cutscene right after is also very emotional, especially when they planted the final flag. 
+            <img src="img/Expedition-Paintress.jpg" class="modal-smallimg">
+            <p> Now is the biggest twist that I never ever would have expected at all, the following cutscene after beating the paintress is where everyone goes back to Lumiére and they started celebrating. It was a really satisfying and wholesome scene until the gommage happens. It was such a shock to me, I didn't expect it at all. 
             <img src="img/Expedition-Act3.jpg" class="modal-smallimg">
+            <p> The final act 
 
             `,
             // Section 1: Music & Atmosphere (Removed <div class="modal">)
