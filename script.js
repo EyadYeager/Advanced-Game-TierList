@@ -270,4 +270,45 @@ document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeModal();
     }
+    
+
+})
+// Close modal when clicking on the dark background overlay
+modal.addEventListener('click', function (event) {
+    // This checks if the user clicked the dark overlay itself 
+    // rather than the content box inside it.
+    if (event.target === modal) {
+        closeModal();
+    }
+})
+
+// --- 3. BACK TO TOP LOGIC ---
+const modalInner = document.querySelector('.modal-inner');
+const backToTopBtn = document.getElementById('back-to-top');
+
+// Show/Hide button based on scroll position
+modalInner.addEventListener('scroll', () => {
+    if (modalInner.scrollTop > 400) {
+        backToTopBtn.classList.replace('top-btn-hidden', 'top-btn-visible');
+    } else {
+        backToTopBtn.classList.replace('top-btn-visible', 'top-btn-hidden');
+    }
 });
+
+// Scroll back to top when button is clicked
+backToTopBtn.addEventListener('click', () => {
+    modalInner.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Important: Reset scroll and hide button when modal closes
+function closeModal() {
+    modal.classList.remove('modal-visible');
+    modal.classList.add('modal-hidden');
+    
+    // Reset the scroll position to the top for the next time it opens
+    modalInner.scrollTop = 0;
+    backToTopBtn.classList.replace('top-btn-visible', 'top-btn-hidden');
+};
