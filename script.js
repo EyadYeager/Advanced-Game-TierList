@@ -196,7 +196,7 @@ const gamePresentations = {
             // Section 1: Open World Design
             `
             <h2>🌍 Open World Design</h2>
-            <p>This games map is larger than I had ever expected, but at the same time looking back at it, it feels like it isn't that large at the same time. It is large yet comprehendible </p>
+            <p>This games map is larger than I had ever expected, but at the same time looking back at it, it feels like it isn't that large. It is large yet comprehendible </p>
             <img src="img/EldenRingMap.jpg" class="modal-smallimg">
             <p> There are so many areas with hidden secrets and places to explore, it truly feels like a miracle happened for such a game to be possibly made. The amount of detail and secrets that they have implemented in this game is beyond anything I have ever seen before. </p>
 
@@ -204,7 +204,23 @@ const gamePresentations = {
             // Section 2: Combat Mechanics
             `
             <h2>⚔️ Combat Mechanics</h2>
-            <p>The combat system in Elden Ring is both challenging and rewarding. The variety of weapons, spells, and abilities allows for diverse playstyles, while the strategic depth keeps players engaged in every encounter.</p>
+            <p>The combat system in this game is quite interesting how committed heavy this game is. Having so many enemies dealing so much damage and punishing you for even a small mistake whether it be overcommitting, not dodging or thinking you can tank the hit and still have your attack land after. This game is both frustrating and satisfying.</p>
+            <p> I am extremely impressed with the amount of different builds and playstyles you can have in this game. There are so many different weapons, spells and abilities that you can use to create your own unique playstyle. After 3 playthroughs of this game I still feel like I haven't scratched the surface, yet I always seem to find the same weapons so that doesn't help.  </p>
+            `,
+            // Section 3: Boss Fights
+            `
+            <h2>⚔️ Boss Fights</h2>
+            <p>The boss fights in this game are truly epic and memorable. 
+            <h3>Starscourge Radahn</h3>
+            <p> Radahn is probably my favourite character in the entire game. His backstory is really cool, from the armor he is wearing to honor Godfrey. His humility and honor in fights is really cool to see. The story with his horse is also so wholsome. The entire story with the Malenia fight to the aftermath. The fight itself is also really fun, his second phase transation, although I knew about it from before, was still one of the coolest things I had seen up until that point. His weapons are also some of my favourite, from the way they look, how they feel when you use them, to the ash of war they have. Truly a GigaChad of a boss fight. </p>
+            <img src="img/EldenRingRadahn.jpg" class="modal-smallimg">
+
+
+            <h3>Malenia, Blade of Miquella</h3>
+            <p> Malenia is probably the easily the hardest boss in the base game. Her moveset is so fast and relentless that it is impossible to not respect her. The way she heals on every hit is absolutely infurating but it also just adds even more of a true challenge. The fight itself is also really fun, her second phase transformation is one of the coolest things I have seen in a boss fight. The music and atmosphere during the fight is also really well done, it truly feels like a two fighters at their peak having a dance. Truly a memorable boss fight. </p>
+            <img src="img/EldenRingMalenia.jpg" class="modal-smallimg">
+
+
             `,
         ]
     },
