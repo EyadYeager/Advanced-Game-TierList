@@ -23,7 +23,7 @@ h1 {
     min-height: 120px;
     margin-bottom: 15px;
     border-radius: 8px;
-    overflow: hidden; /* Ensures game cards don't spill over */
+    overflow: hidden; /* Ensures     cards don't spill over */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* flex-shrink: 4; removed as it can cause issues */
 }
@@ -82,60 +82,63 @@ h1 {
 
 /* 1. Hides the modal by default */
 .modal-hidden {
-    display: none;
+    opacity: 0;
 }
 
-/* 2. Shows the modal and creates the full-screen overlay */
+/* 2. Merged Modal Presentation (Overlay & Content Box combined) */
 .modal-visible {
     display: flex;
-    position: fixed; 
+    top: 50%;
+    left: 50%;
     z-index: 1000; 
-    left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0,0,0,0.9); /* Dark overlay */
     justify-content: center;
     align-items: center;
     overflow: auto;
-}
-
-.modal-inner {
     background: #282c34; /* Dark background for presentation content */
     padding: 30px;
     border-radius: 10px;
     max-width: 900px;
     max-height: 90vh; /* Limits height to screen size */
     overflow-y: auto; /* Allows scrolling if content is long */
-    position: relative;
     color: white;
     scroll-behavior: smooth;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: all 2.3s;
+    -moz-transition: all 2.3s;
+    transition: all 2.3s;
 }
+
 /* Custom scrollbar for Chrome, Edge, and Safari */
-.modal-inner::-webkit-scrollbar {
+.modal-visible::-webkit-scrollbar {
     width: 10px;
 }
 
-.modal-inner::-webkit-scrollbar-track {
+.modal-visible::-webkit-scrollbar-track {
     background: #1e2127; /* Slightly darker than modal background */
     border-radius: 10px;
 }
 
-.modal-inner::-webkit-scrollbar-thumb {
+.modal-visible::-webkit-scrollbar-thumb {
     background: #4b5263; /* Grey-blue thumb */
     border-radius: 10px;
     border: 2px solid #1e2127;
 }
 
-.modal-inner::-webkit-scrollbar-thumb:hover {
+.modal-visible::-webkit-scrollbar-thumb:hover {
     background: #ffda79; /* Gold on hover */
 }
 
-/* Firefox support */
-.modal-inner {
+/* Firefox support
+.modal-visible {
     scrollbar-width: thin;
     scrollbar-color: #4b5263 #1e2127;
-}
+} */
 
 .close-btn {
     position: absolute; /* FIXED: Use absolute to place it relative to the modal */
@@ -201,7 +204,6 @@ h1 {
     margin: 15px 0; 
     display: block; 
 }
-
 
 .modal-bigimg{
     /* Use max-width to make sure large images fit inside the modal on smaller screens */
