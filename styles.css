@@ -23,30 +23,49 @@ h1 {
     min-height: 120px;
     margin-bottom: 15px;
     border-radius: 8px;
-    overflow: hidden; /* Ensures     cards don't spill over */
+    overflow: hidden;
+    /* Ensures     cards don't spill over */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* flex-shrink: 4; removed as it can cause issues */
 }
 
 .tier-rank {
-    width: 200px; /* Fixed width for the label */
+    width: 200px;
+    /* Fixed width for the label */
     padding: 15px;
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
-    flex-shrink: 0; /* CRUCIAL: Prevents the label from shrinking on small screens */
+    flex-shrink: 0;
+    /* CRUCIAL: Prevents the label from shrinking on small screens */
 }
 
 /* Specific colors for each tier ID */
-#tier-1 { background-color: #ffda79; opacity: 0.87; } /* Light Gold */
-#tier-2 { background-color: #e0e0e0; opacity: 0.87; } /* Light Silver */
-#tier-3 { background-color: #cd7f32; opacity: 0.87; } /* Light Bronze */
+#tier-1 {
+    background-color: #ffda79;
+    opacity: 0.87;
+}
+
+/* Light Gold */
+#tier-2 {
+    background-color: #e0e0e0;
+    opacity: 0.87;
+}
+
+/* Light Silver */
+#tier-3 {
+    background-color: #cd7f32;
+    opacity: 0.87;
+}
+
+/* Light Bronze */
 /* Add styles for #tier-3, #tier-4, etc., here */
 
 .game-card {
     display: flex;
     cursor: pointer;
-    max-width: 29vh; /* Using vh to match image size better */
+    max-width: 29vh;
+    /* Using vh to match image size better */
     text-align: center;
     margin: 10px;
     transition: transform 0.2s;
@@ -55,7 +74,8 @@ h1 {
 }
 
 .game-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
+    /* Lift effect on hover */
 }
 
 .game-card img {
@@ -67,15 +87,17 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.tier-items{
+.tier-items {
     display: flex;
     flex-wrap: nowrap;
-    flex-grow: 1; /* Allows the items container to fill available space */
-    min-width: 0; /* Prevents overflow issues */
+    flex-grow: 1;
+    /* Allows the items container to fill available space */
+    min-width: 0;
+    /* Prevents overflow issues */
 }
 
-.tier-rank{
-    font-family:monospace;
+.tier-rank {
+    font-family: monospace;
 }
 
 /* ======== MODAL STYLING (The Presentation Pop-up) ======== */
@@ -96,7 +118,7 @@ h1 {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 1000;
-    
+
     /* Center the inner card directly in the middle of the screen */
     display: flex;
     justify-content: center;
@@ -142,18 +164,21 @@ h1 {
 }
 
 .modal-visible::-webkit-scrollbar-track {
-    background: #1e2127; /* Slightly darker than modal background */
+    background: #1e2127;
+    /* Slightly darker than modal background */
     border-radius: 10px;
 }
 
 .modal-visible::-webkit-scrollbar-thumb {
-    background: #4b5263; /* Grey-blue thumb */
+    background: #4b5263;
+    /* Grey-blue thumb */
     border-radius: 10px;
     border: 2px solid #1e2127;
 }
 
 .modal-visible::-webkit-scrollbar-thumb:hover {
-    background: #ffda79; /* Gold on hover */
+    background: #ffda79;
+    /* Gold on hover */
 }
 
 /* Firefox support
@@ -163,25 +188,30 @@ h1 {
 } */
 
 .close-btn {
-    position: absolute; /* FIXED: Use absolute to place it relative to the modal */
+    position: absolute;
+    /* FIXED: Use absolute to place it relative to the modal */
     top: 10px;
-    right: 10px; /* FIXED: Use right instead of a huge fixed pixel value */
+    right: 10px;
+    /* FIXED: Use right instead of a huge fixed pixel value */
     font-size: 1.5em;
     background: rgb(29, 30, 53);
     border-radius: 25px;
     border: none;
     color: white;
     cursor: pointer;
-    z-index: 1001; /* Ensure it's clickable above content */
+    z-index: 1001;
+    /* Ensure it's clickable above content */
 }
 
 /* Styling for the Back to Top button */
 #back-to-top {
     position: fixed;
     bottom: 40px;
-    right: 60px; /* Positioned relative to the screen */
+    right: 60px;
+    /* Positioned relative to the screen */
     z-index: 1002;
-    background-color: #ffda79; /* Matching your Tier-1 gold */
+    background-color: #ffda79;
+    /* Matching your Tier-1 gold */
     color: #282c34;
     border: none;
     padding: 10px 15px;
@@ -189,7 +219,7 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     transition: opacity 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #back-to-top:hover {
@@ -218,37 +248,42 @@ h1 {
 #modal-content p {
     margin-top: 0.5em;
     margin-bottom: 0.8em;
-    line-height: 1.5; /* Improves readability */
+    line-height: 1.5;
+    /* Improves readability */
 }
 
 /* Ensure images have vertical margin */
 #modal-content img {
-    margin: 15px 0; 
-    display: block; 
+    margin: 15px 0;
+    display: block;
 }
 
-.modal-bigimg{
+.modal-bigimg {
     /* Use max-width to make sure large images fit inside the modal on smaller screens */
-    max-width: 100%; 
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
-.modal-smallimg{
+.modal-smallimg {
     /* Use max-width for smaller images */
     max-width: 50%;
-    height: auto; 
+    height: auto;
 }
 
-.modal-collage{
+.modal-collage {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Distributes images evenly */
+    justify-content: space-around;
+    /* Distributes images evenly */
     margin-top: 15px;
 }
 
 .modal-collage img {
     height: 240px;
     width: auto;
-    max-width: 48%; /* Allows two images side-by-side on a wide screen */
-    margin: 5px; /* Small margin around each collage image */
+    max-width: 48%;
+    /* Allows two images side-by-side on a wide screen */
+    margin: 5px;
+    /* Small margin around each collage image */
 }
