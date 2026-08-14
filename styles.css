@@ -89,7 +89,7 @@ h1 {
 
 .tier-items {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-grow: 1;
     /* Allows the items container to fill available space */
     min-width: 0;
