@@ -270,6 +270,25 @@ const gamePresentations = {
         ]
 
     },
+
+    // God of War Ragnarok
+    'God of War Ragnarok': {
+        title: '2-Tier: God Of War Ragnarok',
+        sections: [
+            // Section 1: Combat (Removed <div class="modal">)
+            `
+            <h2>🪓 Combat System & Leviathan Axe</h2>
+            <p>Detail what you love about the combat feel, the weight of the Leviathan Axe, and the rune abilities.</p>
+            `,
+            // Section 2: Relationship (Removed </div>)
+            `
+            <h2>👨‍👦 Relationship & Worldbuilding</h2>
+            <p><p>Lorem ipsum dolor sit amet. Qui magnam reprehenderit ab doloremque impedit eum accusantium perspiciatis qui sunt voluptas. Et corporis maxime ab quibusdam sint a tenetur debitis At rerum cumque non amet ipsam aut autem suscipit id voluptatem explicabo. </p><p>In dolore necessitatibus 33 vero praesentium et atque nemo nam saepe quia ut voluptatem nesciunt ea quae delectus vel enim eius. Et corporis officia sit velit rerum est recusandae numquam ea labore deleniti. Non repellendus galisum non voluptatem laudantium qui debitis quia rem iure explicabo. </p><p>33 fugit earum aut molestias omnis non molestiae animi. Ut illum accusantium qui temporibus odit aut neque unde ut aliquid voluptate vel internos iste. </p>
+.</p>
+            `
+        ]
+    },
+
     //Like a dragon: The man who erased his name
     'LAD Gaiden': {
         title: '2-Tier: Like a dragon Gaiden: The Man Who Erased His Name',
