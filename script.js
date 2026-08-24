@@ -212,7 +212,7 @@ const gamePresentations = {
             <h2>⚔️ Boss Fights</h2>
             <p>The boss fights in this game are truly epic and memorable. 
             <h3>Starscourge Radahn</h3>
-            <p> Radahn is probably my favourite character in the entire game. His backstory is really cool, from the armor he is wearing to honor Godfrey. His humility and honor in fights is really cool to see. The story with his horse is also so wholsome. The entire story with the Malenia fight to the aftermath. The fight itself is also really fun, his second phase transation, although I knew about it from before, was still one of the coolest things I had seen up until that point. His weapons are also some of my favourite, from the way they look, how they feel when you use them, to the ash of war they have. Truly a GigaChad of a boss fight. </p>
+            <p> Radahn is probably my favourite character in the entire game. His backstory is really cool, from the armor he is wearing to honor Godfrey. His humility and honor in fights is really cool to see. The story with his horse is also so wholsome. The entire story with the Malenia fight to the aftermath. </br></br> The fight itself is also really fun, his second phase transation, although I knew about it from before, was still one of the coolest things I had seen up until that point. His weapons are also some of my favourite, from the way they look, how they feel when you use them, to the ash of war they have. Truly a GigaChad of a boss fight. </p>
             <img src="img/EldenRingRadahn.jpg" class="modal-smallimg">
 
 
@@ -228,16 +228,21 @@ const gamePresentations = {
             <p> Messmer is such a cool boss fight, he is my second favourite boss in the game. His design is simply just soo cool and swagger and his moveset and how he moves is just right. He feels so unique but he coincidentally has some moves that eerliy reminds of Malenia. He is closest I think to an equally difficult and a super fun boss fight. His second phase although much easier felt super satisfying to dodge through. It felt more cinematic than the first phase which really hit for me.</p>
             <img src="img/EldenRingMessmer.jpg" class="modal-smallimg">
 
+            <h2>Honorable  mentions: </h2>
+            <h3> Bayle</h3>
+            <p> Bayle probably has the most spectacular phase transation in the entire game. It is such eye candy and epic. His design is also quite metal, he is one of the few bosses that look truly terrifying and menacing, you feel intimated , because he actually looks scary attackking you. </p>
+            <img src="img/EldenRingBayle.jpg" class="modal-smallimg">
 
-
-
+            <h3> Midra, lord of Frenzied Flame</h3>
+            <p> Midra is a lot of people's favourite boss for a reason and I do really enjoy fighting him, because of his moveset. They feel...just right. It is like Messmer where dodging truly feels perfect and super satisfying to keep the momentum up. </br></br> Of course his design is worth mentioning, his decrepit look and rotting body with the contrast of his pure and luminating head is just a thing of beauty.</p>
+            <img src="img/EldenRingMidra.jpg" class="modal-smallimg">
             `,
         ]
     },
 
     // Persona 5 Royal
-    'Persona5Royal': {
-        title: '1-Tier: Persona5Royal',
+    'Persona 5 Royal': {
+        title: '1-Tier: Persona 5 Royal',
         sections: [
             // Section 1: Combat (Removed <div class="modal">)
             `
