@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dynamic Game Tier List</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
-
+    
 <body>
 
     <header>
@@ -21,7 +22,7 @@
                 <h2 class="tier-label">1-Tier: Masterpiece</h2>
             </div>
             <div class="tier-items">
-                <div class="game-card" id="Expedition-33" onclick="openModal('Expedition-33')">
+                <div class="game-card" data-file="expedition-33">
                     <img src="img/Expedition-33.jpg" alt="Clair Obscur: Expedition 33">
                     <p>Clair Obscur: Expedition 33</p>
                 </div>
@@ -92,9 +93,9 @@
 
     <div id="game-modal" class="modal-overlay modal-hidden">
         <div class="modal-inner">
-            <button class="close-btn" onclick="closeModal()">Close</button>
+            <button class="close-btn" id="close-modal">Close</button>
 
-            <div id="modal-content"></div>
+            <div id="modal-content">Loading...</div>
 
         </div>
         <button id="back-to-top" class="top-btn-hidden">↑ Top</button>

@@ -1,75 +1,40 @@
 // --- 0. MODAL ELEMENTS ---
 const modal = document.getElementById('game-modal');
-const contentArea = document.getElementById('modal-content');
+const modalContent = document.getElementById('modal-content');
+const closeBtn = document.getElementById('close-modal');
+
+document.querySelectorAll('.game-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const fileName = card.getAttribute('data-file');
+        openModalWithMarkdown(fileName);
+    });
+});
+function openModalWithMarkdown(fileName) {
+    modalContent.innerHTML = `<p>Loading content for ${fileName}...</p>`;
+    modal.classList.remove('modal-hidden');
+
+    fetch(`Games/${fileName}.md`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch markdown content');
+            }
+            return response.text();
+        })
+        .then(markdownContent => {
+            // Process the markdown content (e.g., convert to HTML)
+            // For simplicity, we'll assume the markdown is already converted
+            modalContent.innerHTML = marked.parse(markdownContent);
+        })
+        .catch(error => {
+            console.error('Error fetching markdown content:', error);
+            modalContent.innerHTML = `<p>Error loading content for ${fileName}.</p>`;
+        });
+}
 
 // --- 1. GAME DATA SOURCE (Now using the 'sections' array) ---
 const gamePresentations = {
     // Clair Obscur: Expedition 33 
-    'Expedition-33': {
-        title: '1-Tier: Clair Obscur: Expedition 33',
-        sections: [
-            // Section 0: Acts
-            `
-            <h2> Acts of Clair Obscur: Expedition 33</h2>
 
-            <img src="img/Expedition-Prologue.jpg" class="modal-smallimg">
-            <p>The prologue of game sets a great tone for the rest of the game, I imagine a lot of people cried at the ending of the prologue, but unfortunately I didn't since I figured out what was going to happen. However, it was still a very emotional scene and I really liked how it was presented. The music played a very large role in which I noticed and it will be a theme that appears throughtout the game. </p>
-            <img src="img/Expedition-Act1.jpg" class="modal-smallimg">
-            <p> Looking back through Act 1 this act was the one with the most exploration and worldbuilding but it also had the most amount of light and comedic moments, especially because of the Gestrals. This act still had a lot of dark and emotoinally heavy moments. I think this came from the fact that Gustave was the main character here. At the beginning of the act he was very stressed and would only be thinking abuot Maelle and how to save her. So as soon as he found her the tone of the game lightened up a lot more. That is when I started to absolutely love Gustave and he started to show his funny and brotherly side. </p>\
-            <p> The ending of this act was something I never ever expected. It never crossed my mind that Gustave would die at all. This really took me by surprise. I didn't cry yet everytime I thought about it I felt sad, especially because to me I didn't care about Maelle and Sciel at all. I liked Lune but I aboslutely loved Gustave, so I was extremely sad after I realised that he was fully gone, but I was even more infurated when then they replaced him with Verso a ghetto Gustave. </p>
-            <img src="img/Expedition-Act2.jpg" class="modal-smallimg">
-            <p> Act 2 was quite intense, especially with the death of a party member. The mood of the entire team was super tense. It doesn't help with such a suspicious looking guy appearing and sort of taking over the role of Gustave.</p>
-            <p> I super enjoyed the combat here not only because of the new characters they are both quite unique and I enjoyed them a lot. It also added the Gradient counter and attacks which have incredibly satisfying sound effects behind 👍<p>
-            <p> Old Lumiére was a really cool area. The mysteries kept on piling up and the end of the area with the cutscene of th manor right before the boss fight also added more to the mystery. This is also when I first heard a small part of "Une vie à t'aimer" which I instantly loved.  The boss fight was really good, he was quite threatening espceially since he can gommage my party.</p>
-            <p> Then comes two Axons and one of if not my favourite area in the game "Sirene, She who plays with Wonder" . Firstly the area is gorgeous, The music is beautiful and a little touch I absoltuly love is how the vocals are made so that it sounds like the axon is the one singing it and whenever you turn the camera the vocals switch places in the headphones. Simply amazing. The boss fight itself is also really cool, I really like when she summons her minions you get a short pov shot of them flying down to you. Simple but nice.</p>
-            <img src="img/Expedition-Sirene.jpg" class="modal-smallimg">
-            <p> As for the other axon Visage I did find it neat that you can weaken him by destroying his masks. However, I didn't really have much to say about it, except for the fact that it is supposed to represent Verso "He who guards truth with lies" which is a perfect representation of him. Although I really liked the cutscene of the mask keeper first appearing really cool entrance.  </p>
-            <img src="img/Expedition-Visage.jpg" class="modal-smallimg">
-            <p> Finally the monolith, I wasn't expecting to reach it yet since I thought there would be another act and I expected this to happen at the third act. I really like the music and the atomsphere as soon as you enter the monolith area with the giant figure of the paintress just sitting there. Inside of the monolith are a bunch of cool designs where they are redisgns of previous areas, I really enjoyed it. I did feel that the it was very long getting to the top of the monolith just a little. 
-            <p> The Renoir fight here was absolutely amazing, one of my favourite boss fights in the entire game. Une vie à t'aimer is the boss fight theme here and it is absolutely stunning. Even just the cutscene leading up to the boss fight is probably one of my favourites. His second phase with a lion appearing out of nowhere is just soo cool. He is truly just Hoarah loux.
-            <img src="img/Expedition-Renoir.jpg" class="modal-smallimg"> 
-            <p> Finally the paintress fight was pretty good, not much to say except for the second phase where she brings the giant figure in the second fight and she starts to throw some absurd attacks. The only other thing I remember is right after you beat her she starts to heal your party, which I did kind of hit me deep. The cutscene right after is also very emotional, especially when they planted the final flag. 
-            <img src="img/Expedition-Paintress.jpg" class="modal-smallimg">
-            <p> Now is the biggest twist that I never ever would have expected at all, the following cutscene after beating the paintress is where everyone goes back to Lumiére and they started celebrating. It was a really satisfying and wholesome scene until the gommage happens. It was such a shock to me, I didn't expect it at all. 
-            <img src="img/Expedition-Act3.jpg" class="modal-smallimg">
-            <p> The final act 
-
-            `,
-            // Section 1: Music & Atmosphere (Removed <div class="modal">)
-            `
-            <h2>🎵 Music & Atmosphere</h2>
-            <p>The soundtrack of this game is probably the best in terms of a whole playlist. Both in terms of the music sounds and also poetically. The references and how much the music reflects the game in every way possible, especially the lyrics.</p>
-            <h3>Une vie à t'aimer </h3>
-            <p>This is probably my favourite song in the entire game, one of if not the best boss soundtrack that I can think of. It is an 11 minute of pure awe. It is used in the Renior boss fight in Stone Wave Cliffs. The lyrics are absolutely poetic, it is basically an argument between the male and the female singers whom are playing the characters in the game Renoir and Aline. The female singer is as amazing as always, but the surprise of an male singer was a shock and for him to be the one who also sang 'Bury the light' from DMC5, was amazing. As much as I love the Alice the female singer, I absolutely love how the Victor the male singer just sounds so raw and real. It feels like he is just screaming from the bottom of his heart. Absolute Masterpiece of a track </p>
-            `,
-            // Section 2: Boss Fights
-            `
-            <h2>⚔️ Boss Fights</h2>
-            <h3>Simon </h3>
-            <img src="img/Simon.jpg" class="modal-smallimg">
-            <h4>The Buildup </h4>
-            <p>Firstly before the fight even begins the drop to reach his arena is a very nice touch, really builds up the atmosphere. Then there is the arena, absolute darkness with only golden swords in the back with one guy sitting showing his back.</p>
-            <h4>The Fight </h4>
-            <h5>First Phase </h5>
-            <p>It initially starts with quite a simple yet cool boss fight where Simon has a few attacks all of which are quite nice and meaty when you are able to parry them. He doesn't have that much HP.</p>
-            <h5 >Phase Transition </h5>
-            <p>The cutscene into the second phase was very dark souls-like, I especially liked how Clea was the "maiden" who encouraged him into continuing fighting, then his hair turning white was a really cool scene.  
-            <h5>Second Phase </h5>
-            <p> This part gets crazy with 2 new attacks that are difficult and every single attack from the first phase is double the amount of hits now which throws you super off guard, especially when you have to switch between the first and the second phases. 
-            The extra 3rd Phase at around 30% of his health he annihilates your party so you are forced to make a second party that is competent.  </p>
-            `,
-            // Section 3: Visual Style & World (Removed </div>)
-            `
-            <h2>✨ Visual Style & World</h2>
-            <div class="modal-collage">
-            <p>This absolute style and art of this game's world is breathtaking, capturing the essence of exploration and adventuring through something truly new and unfamiliar. Everything looks like it was taken from a painting (Literally).</p>
-            <img src="img/Expedition-area1.jpg" class="modal-smallimg"><img src="img/Expedition-area3.jpg" class="modal-smallimg">
-            <img src="img/Expedition-area2.jpg" class="modal-smallimg"><img src="img/Expedition-area4.jpg" class="modal-smallimg">
-            <img src="img/Expedition-area5.jpg" class="modal-smallimg"><img src="img/Expedition-area6.jpg" class="modal-smallimg">
-            </div>
-            `
-        ]
-    },
 
     // Final Fantasy XVI (Cleaned into multiple, separated sections)
     'FinalFantasyXVI': {
@@ -359,9 +324,9 @@ function openModal(gameID) {
         ).join('<hr>');
 
         // 2. Inject the final HTML content
-        contentArea.innerHTML = `<h1>${data.title}</h1>` + slidesHTML;
+        modalContent.innerHTML = `<h1>${data.title}</h1>` + slidesHTML;
     } else {
-        contentArea.innerHTML = '<h1>Content Not Found!</h1><p>Please check the game ID or content in script.js.</p>';
+        modalContent.innerHTML = '<h1>Content Not Found!</h1><p>Please check the game ID or content in script.js.</p>';
     }
 
     // 3. Show the modal
@@ -369,12 +334,16 @@ function openModal(gameID) {
     modal.classList.add('modal-visible');
 }
 
+
+closeBtn.addEventListener('click', closeModal);
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+
 function closeModal() {
-    // Hide the modal immediately
     modal.classList.remove('modal-visible');
     modal.classList.add('modal-hidden');
 }
-
 // Optional: Allow closing the modal by pressing the ESC key
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
@@ -421,4 +390,4 @@ function closeModal() {
     // Reset the scroll position to the top for the next time it opens
     modalInner.scrollTop = 0;
     backToTopBtn.classList.replace('top-btn-visible', 'top-btn-hidden');
-};
+}
