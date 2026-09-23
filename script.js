@@ -16,7 +16,7 @@ async function openModalWithMarkdown(fileName) {
     try {
         // Try the Games folder first
         let response = await fetch(`Games/${fileName}.md`);
-        
+
         // If Games fails, try the Anime folder
         if (!response.ok) {
             response = await fetch(`Anime/${fileName}.md`);
@@ -29,7 +29,7 @@ async function openModalWithMarkdown(fileName) {
 
         const markdownContent = await response.text();
         modalContent.innerHTML = marked.parse(markdownContent);
-        
+
     } catch (error) {
         console.error('Error fetching markdown content:', error);
         modalContent.innerHTML = `<p>Error loading content for ${fileName}.</p>`;
