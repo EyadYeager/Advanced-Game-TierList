@@ -9,26 +9,31 @@ document.querySelectorAll('.game-card').forEach(card => {
         openModalWithMarkdown(fileName);
     });
 });
-function openModalWithMarkdown(fileName) {
+async function openModalWithMarkdown(fileName) {
     modalContent.innerHTML = `<p>Loading content for ${fileName}...</p>`;
     modal.classList.remove('modal-hidden');
 
-    fetch(`Games/${fileName}.md`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch markdown content');
-            }
-            return response.text();
-        })
-        .then(markdownContent => {
-            // Process the markdown content (e.g., convert to HTML)
-            // For simplicity, we'll assume the markdown is already converted
-            modalContent.innerHTML = marked.parse(markdownContent);
-        })
-        .catch(error => {
-            console.error('Error fetching markdown content:', error);
-            modalContent.innerHTML = `<p>Error loading content for ${fileName}.</p>`;
-        });
+    try {
+        // Try the Games folder first
+        let response = await fetch(`Games/${fileName}.md`);
+        
+        // If Games fails, try the Anime folder
+        if (!response.ok) {
+            response = await fetch(`Anime/${fileName}.md`);
+        }
+
+        // If both fail, throw an error
+        if (!response.ok) {
+            throw new Error('Failed to fetch markdown content from both folders');
+        }
+
+        const markdownContent = await response.text();
+        modalContent.innerHTML = marked.parse(markdownContent);
+        
+    } catch (error) {
+        console.error('Error fetching markdown content:', error);
+        modalContent.innerHTML = `<p>Error loading content for ${fileName}.</p>`;
+    }
 }
 
 

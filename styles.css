@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
-    background-image: url('img/background.jpg');
+    background-image: url('img/game/background.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -286,4 +286,19 @@ h1 {
     /* Allows two images side-by-side on a wide screen */
     margin: 5px;
     /* Small margin around each collage image */
+}
+
+.nav-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1003;
+    background-color: #ffda79;
+    color: #282c34;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
 }

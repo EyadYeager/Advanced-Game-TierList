@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Game Tier List</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <button class="nav-button" onclick="window.location.href='index.html'">Game Tier List</button>
+        <h1>My Favorite Anime: Tiered Presentations</h1>    
+    </header>
+
+    <main id="tier-list-container">
+
+        <div class="tier-row" id="tier-1">
+            <div class="tier-rank">
+                <h2 class="tier-label">1-Tier: Masterpiece</h2>
+            </div>
+            <div class="tier-items">
+                <div class="game-card" data-file="attack-on-titan">
+                    <img src="img/anime/aot.jpg" alt="Attack on Titan">
+                    <p>Attack on Titan</p>
+                </div>
+
+       
+
+            </div>
+        </div>
+
+
+        <div class="tier-row" id="tier-2">
+            <div class="tier-rank">
+                <h2 class="tier-label">2-Tier: Outstanding</h2>
+            </div>
+            <div class="tier-items">
+     
+
+            </div>
+        </div>
+
+        <div class="tier-row" id="tier-3">
+            <div class="tier-rank">
+                <h2 class="tier-label">3-Tier: Some Memorable Moments</h2>
+            </div>
+            <div class="tier-items">
+
+            </div>
+        </div>
+
+    </main>
+
+    <div id="game-modal" class="modal-overlay modal-hidden">
+        <div class="modal-inner">
+            <button class="close-btn" id="close-modal">Close</button>
+
+            <div id="modal-content">Loading...</div>
+
+        </div>
+        <button id="back-to-top" class="top-btn-hidden">↑ Top</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
